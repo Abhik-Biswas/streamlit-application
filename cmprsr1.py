@@ -6,6 +6,7 @@ import io
 from PIL import Image
 
 import streamlit as st
+img_array = None
 
 st.header('SVD Image Compressor')
 
