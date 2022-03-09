@@ -37,9 +37,9 @@ u0,sigma0,vt0 = np.linalg.svd(image0)
 u1,sigma1,vt1 = np.linalg.svd(image1)
 u2,sigma2,vt2 = np.linalg.svd(image2)
 
-Sigma0=np.zeros((1024,1024))
-Sigma1=np.zeros((1024,1024))
-Sigma2=np.zeros((1024,1024))
+Sigma0=np.zeros(image0.shape)
+Sigma1=np.zeros(image1.shape)
+Sigma2=np.zeros(image2.shape)
 
 
 for i in range(rank):
